@@ -1,0 +1,36 @@
+2026/09/04-18:32:48.498 2dc4 Reusing MANIFEST C:\Projects\plbws\plbws\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/09/04-18:32:48.499 2dc4 Recovering log #1415
+2026/09/04-18:32:48.533 2dc4 Reusing old log C:\Projects\plbws\plbws\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001415.log 
+2026/09/04-18:47:07.186 2dc4 Level-0 table #1434: started
+2026/09/04-18:47:07.234 2dc4 Level-0 table #1434: 1171106 bytes OK
+2026/09/04-18:47:07.235 2dc4 Delete type=0 #1415
+2026/09/04-18:47:07.238 2dc4 Compacting 1@0 + 0@1 files
+2026/09/04-18:47:07.281 2dc4 Generated table #1435@0: 21048 keys, 467980 bytes
+2026/09/04-18:47:07.286 2dc4 Generated table #1436@0: 752 keys, 24282 bytes
+2026/09/04-18:47:07.287 2dc4 Compacted 1@0 + 0@1 files => 492262 bytes
+2026/09/04-18:47:07.287 2dc4 compacted to: files[ 0 2 17 0 0 0 0 ]
+2026/09/04-18:47:07.288 2dc4 Delete type=2 #1434
+2026/09/04-18:47:52.693 2dc4 Compacting 1@1 + 10@2 files
+2026/09/04-18:47:52.777 2dc4 Generated table #1437@1: 74076 keys, 2219733 bytes
+2026/09/04-18:47:52.918 2dc4 Generated table #1438@1: 97956 keys, 2250952 bytes
+2026/09/04-18:47:53.007 2dc4 Generated table #1439@1: 103473 keys, 2256578 bytes
+2026/09/04-18:47:53.144 2dc4 Generated table #1440@1: 101479 keys, 2254242 bytes
+2026/09/04-18:47:53.263 2dc4 Generated table #1441@1: 67188 keys, 2465027 bytes
+2026/09/04-18:47:53.324 2dc4 Generated table #1442@1: 4735 keys, 2150310 bytes
+2026/09/04-18:47:53.384 2dc4 Generated table #1443@1: 2630 keys, 2157342 bytes
+2026/09/04-18:47:53.442 2dc4 Generated table #1444@1: 5139 keys, 2150859 bytes
+2026/09/04-18:47:53.593 2dc4 Generated table #1445@1: 25529 keys, 2265018 bytes
+2026/09/04-18:47:53.661 2dc4 Generated table #1446@1: 15587 keys, 1246543 bytes
+2026/09/04-18:47:53.661 2dc4 Compacted 1@1 + 10@2 files => 21416604 bytes
+2026/09/04-18:47:53.662 2dc4 compacted to: files[ 0 1 17 0 0 0 0 ]
+2026/09/04-18:47:53.663 2dc4 Delete type=2 #1419
+2026/09/04-18:47:53.663 2dc4 Delete type=2 #1420
+2026/09/04-18:47:53.663 2dc4 Delete type=2 #1421
+2026/09/04-18:47:53.663 2dc4 Delete type=2 #1422
+2026/09/04-18:47:53.664 2dc4 Delete type=2 #1423
+2026/09/04-18:47:53.664 2dc4 Delete type=2 #1424
+2026/09/04-18:47:53.664 2dc4 Delete type=2 #1425
+2026/09/04-18:47:53.664 2dc4 Delete type=2 #1426
+2026/09/04-18:47:53.665 2dc4 Delete type=2 #1427
+2026/09/04-18:47:53.665 2dc4 Delete type=2 #1428
+2026/09/04-18:47:53.665 2dc4 Delete type=2 #1435
