@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# whatsapp-web.js session cache (Chromium profile - large, regenerates on QR scan)
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Database
+cards.db
+cards.db-journal
+
+# Temp files used by /create
+tmp/
+
+# Env / secrets
+.env
+
+# OS / editor cruft
+.DS_Store
+*.log
