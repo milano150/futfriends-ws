@@ -8,6 +8,10 @@ const HELP_TEXT =
 ▸ /daily - claim your free daily pack(s)
 ▸ /give [card or pack] @user - give a card or pack to someone
 ▸ /exchange [card] [card] [card] (or /exc) - trade 3 same-pack cards for the next tier's pack
+▸ /trade @user [your card] [their card] - propose a 1-for-1 trade (they must /trade confirm)
+▸ /wheel - view today's wheel (1 special, 1 futurestars, 2 totw, 2 base)
+▸ /wheel spin - spin once for a random card from today's wheel
+▸ /best - top 10 best cards currently owned, with owner
 ▸ /autosetup - auto-build your best 2-1-2 lineup from your cards
 ▸ /lineup - view your current lineup as an image
 ▸ /team - view your current lineup as text (positions + OVR)

@@ -23,6 +23,9 @@ const showLineup = require('./commands/lineup');
 const showTeam = require('./commands/team');
 const showLeaderboard = require('./commands/leaderboard');
 const createCard = require('./commands/create');
+const tradeCards = require('./commands/trade');
+const wheel = require('./commands/wheel');
+const bestCards = require('./commands/best');
 
 const client = new Client({
     authStrategy: new LocalAuth()
@@ -130,6 +133,18 @@ client.on('message', async msg => {
         }
         if (command === '/create') {
             await createCard(client, msg);
+            return;
+        }
+        if (command === '/trade') {
+            await tradeCards(client, msg, arg);
+            return;
+        }
+        if (command === '/wheel') {
+            await wheel(client, msg, arg);
+            return;
+        }
+        if (command === '/best') {
+            await bestCards(client, msg);
             return;
         }
 

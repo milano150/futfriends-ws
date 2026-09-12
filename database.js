@@ -144,6 +144,21 @@ function getInventory(userId) {
     });
 }
 
+// Every owned card across every user - used for things like /best where we
+// need to rank cards regardless of who holds them.
+function getAllOwnedCards() {
+    return new Promise((resolve, reject) => {
+        db.all(
+            `SELECT user_id, card FROM inventory`,
+            [],
+            (error, rows) => {
+                if (error) reject(error);
+                else resolve(rows);
+            }
+        );
+    });
+}
+
 // Returns how many players currently own a copy of this exact card.
 // Since a player can only ever hold one copy of a given card, showing it
 // is always "1 of <total>" - e.g. total 1 means nobody else has it.
@@ -359,6 +374,7 @@ module.exports = {
     addCard,
     ownsCard,
     getInventory,
+    getAllOwnedCards,
     getCardCirculation,
     removeCard,
     addPack,

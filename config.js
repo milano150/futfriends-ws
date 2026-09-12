@@ -14,6 +14,18 @@ const DEF_POSITIONS = ['cb', 'lb', 'rb','lwb','rwb'];
 const MID_POSITIONS = ['cm', 'cam', 'cdm', 'lm', 'rm'];
 const ST_POSITIONS = ['st', 'cf','lw','rw']; //lwb rwb cant be added yet
 
+const PACK_EMOJIS = {
+    base: '🟡',
+    totw: '🔶',
+    futurestars: '🟪',
+    toty: '🟦',
+    special: '⭐'
+};
+
+function emojiForPack(pack) {
+    return PACK_EMOJIS[pack.toLowerCase()] || '🃏';
+}
+
 function getPackNames() {
     if (!fs.existsSync(PACKS_FOLDER)) return [];
 
@@ -58,5 +70,6 @@ module.exports = {
     ST_POSITIONS,
     getPackNames,
     getPackCards,
-    parseCardMeta
+    parseCardMeta,
+    emojiForPack
 };

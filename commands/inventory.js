@@ -1,16 +1,6 @@
 const path = require('path');
 const { getInventory, getPacks } = require('../database');
-
-const PACK_EMOJIS = {
-    base: '🟡',
-    totw: '🔶',
-    futurestars: '🟪',
-    toty: '🟦'
-};
-
-function emojiFor(pack) {
-    return PACK_EMOJIS[pack.toLowerCase()] || '🃏';
-}
+const { emojiForPack } = require('../config');
 
 async function showInventory(msg) {
 
@@ -34,7 +24,7 @@ async function showInventory(msg) {
     if (packs.length > 0) {
         text += '📦 *Packs (unopened)*\n______\n';
         packs.forEach(({ pack, quantity }) => {
-            text += `${emojiFor(pack)} ${pack} x${quantity}\n`;
+            text += `${emojiForPack(pack)} ${pack} x${quantity}\n`;
         });
         text += '\n';
     }
@@ -44,7 +34,7 @@ async function showInventory(msg) {
         cards.forEach(cardId => {
             const [pack, file] = cardId.split('/');
             const cardName = path.parse(file).name;
-            text += `${emojiFor(pack)} ${cardName}\n`;
+            text += `${emojiForPack(pack)} ${cardName}\n`;
         });
         text += `\n✨ *${cards.length} cards collected*`;
     }
